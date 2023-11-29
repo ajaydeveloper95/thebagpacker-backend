@@ -10,12 +10,33 @@ const packageSchema = new mongoose.Schema(
       type: String,
       require: true,
     },
+    price: {
+      type: String,
+      require: true,
+    },
+    duration: {
+      type: String,
+      require: true,
+    },
+    pickup: {
+      type: String,
+      require: true,
+    },
     redirectLink: {
       type: String,
       require: true,
     },
     isActive: {
       type: Boolean,
+      require: true,
+    },
+    slug: {
+      type: Boolean,
+      require: true,
+      unique: true,
+    },
+    packageInfo: {
+      type: String,
       require: true,
     },
     image: {
