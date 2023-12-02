@@ -30,8 +30,12 @@ const packageSchema = new mongoose.Schema(
       type: Boolean,
       require: true,
     },
-    slug: {
+    isHomePage: {
       type: Boolean,
+      require: true,
+    },
+    slug: {
+      type: String,
       require: true,
       unique: true,
     },
