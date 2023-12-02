@@ -4,7 +4,7 @@ const AdminController = require("./adminController");
 const Auth = require("../middleware/authVerify");
 const { celebrate, Joi } = require("celebrate");
 
-router.get("/", Auth.verify, AdminController.getPackage);
+router.get("/", AdminController.getPackage);
 
 router.post(
   "/addPackage",
